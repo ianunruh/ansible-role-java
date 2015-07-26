@@ -1,0 +1,7 @@
+- hosts: all
+  roles:
+    - java
+  post_tasks:
+    - name: test if java is installed
+      command: java -version
+      changed_when: false

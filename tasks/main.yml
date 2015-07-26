@@ -1,0 +1,8 @@
+- include: install_oracle7.yml
+  when: java_distribution == "oracle7"
+
+- include: install_openjdk6.yml
+  when: java_distribution == "openjdk6"
+
+- include: install_openjdk7.yml
+  when: java_distribution == "openjdk7"

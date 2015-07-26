@@ -1,0 +1,4 @@
+- name: install openjdk java 6
+  apt:
+    pkg: openjdk-6-jdk
+    state: present
